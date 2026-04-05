@@ -737,14 +737,28 @@ main .recent .fondvert {
 }
 
 @media (max-width: 394px) {
-  .nav {
-    display: none;
+  nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .nav,
+  .search-wrapper,
+  .logs {
+    display: none !important;
   }
 
   .burger {
     display: flex !important;
     align-items: center;
-    justify-content: center;
+  }
+
+  .burger img {
+    display: block !important;
+    width: 56px;
+    height: 56px;
   }
 
   .hero-image {
